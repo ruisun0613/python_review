@@ -1,7 +1,7 @@
 # Python Review
 
 This repository contains my Python review exercises and projects based on
-*Python Crash Course* and my data structures and algorithms practice.
+*Python Crash Course*, along with my data structures and algorithms practice.
 
 ## Contents
 
@@ -17,8 +17,25 @@ This repository contains my Python review exercises and projects based on
 - Chapter 9: Classes
 - Chapter 10: Files and Exceptions
 - Chapter 11: Testing
-- Part II Projects
-  - Alien Invasion (In Progress)
+
+### Part II Projects
+
+#### Alien Invasion
+- Ship movement and controls
+- Bullet system
+- Alien fleet generation
+- Fleet movement and direction changes
+- Bullet-alien collision detection
+- Ship-alien collision handling
+- Game state and lives
+- Game over logic
+- Scoring system (In Progress)
+
+#### Data Visualization
+- Not Started
+
+#### Django Web Application
+- Not Started
 
 ### Data Structures and Algorithms
 
@@ -27,9 +44,9 @@ and algorithms.
 
 ## Current Progress
 
-- Python fundamentals: Completed
+- Python Fundamentals: Completed
 - Testing with pytest: Completed
-- Alien Invasion: In Progress
+- Alien Invasion: Chapter 13 Completed
 - Data Visualization: Not Started
 - Django Web Application: Not Started
 
