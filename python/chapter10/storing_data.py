@@ -6,16 +6,16 @@ your favorite number! It’s _____.”
 """
 from pathlib import Path
 import json
-# # Write
-# number = int(input("Please enter a number: "))
-# path = Path("python/chapter10/number.json")
-# f_number = json.dumps(number)
-# path.write_text(f_number)
+# Write
+number = int(input("Please enter a number: "))
+path = Path("python/chapter10/number.json")
+f_number = json.dumps(number)
+path.write_text(f_number)
 
-# # Read
-# content = path.read_text()
-# favorite_number = json.loads(content)
-# print(f"I know your favorite number! It’s {favorite_number}")
+# Read
+content = path.read_text()
+favorite_number = json.loads(content)
+print(f"I know your favorite number! It’s {favorite_number}")
 
 """
 10-12. Favorite Number Remembered: Combine the two programs you
@@ -23,17 +23,17 @@ wrote in Exercise 10-11 into one file. If the number is already stored, report
 the favorite number to the user. If not, prompt for the user’s favorite number
 and store it in a file. Run the program twice to see that it works.
 """
-# path = Path("python/chapter10/favorite_number.json")
+path = Path("python/chapter10/favorite_number.json")
 
-# try:
-#     content = path.read_text()
-#     favorite_number = json.loads(content)
-#     print(f"I know your favorite number! It’s {favorite_number}")
-# except FileNotFoundError:
-#     print("Can you tell me the number again: ")
-#     number = int(input())
-#     favorite_number = json.dumps(number)
-#     path.write_text(favorite_number)
+try:
+    content = path.read_text()
+    favorite_number = json.loads(content)
+    print(f"I know your favorite number! It’s {favorite_number}")
+except FileNotFoundError:
+    print("Can you tell me the number again: ")
+    number = int(input())
+    favorite_number = json.dumps(number)
+    path.write_text(favorite_number)
 
 """
 10-13. User Dictionary: The remember_me.py example only stores one
